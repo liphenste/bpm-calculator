@@ -1,5 +1,5 @@
 # bpm-calculator
-Calculates bpm based on rate of user input. Made with node.js, AngularJS, jQuery, Bootstrap
+Calculates bpm based on rate of user input. Made with node.js, AngularJS, Bootstrap
 
 ## Setup
 This app actually doesn't have any dependencies atm, the `package.json` is only there in case I want to add some in the future.
