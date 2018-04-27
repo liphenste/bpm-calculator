@@ -1,11 +1,12 @@
 const http = require('http');
 const fs = require('fs'); //filesystem
 
+// arrow functions: (param1 .. paramN) => { statements }
 fs.readFile('index.html', (err, html) => {
   if(err){
     throw err;
   }
-  const hostname = '127.0.0.1';
+  const hostname = 'localhost';
   const port = 3000;
 
   const server = http.createServer((req, res) => {
