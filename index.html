@@ -15,10 +15,15 @@
   <h1>BPM Calculator</h1>
 
   <div>
-    <div id="instructions">Tap the button or tap anywhere on your keyboard to start recording.</div>
-    <button class="btn btn-default btn-lg" data-ng-click="set_bpm()" data-ng-Keydown="set_bpm()">Tap!</button>
-    <button class="btn btn-danger btn-lg" data-ng-click="reset_bpm()">Reset</button>
-    <div id="status">You are currently tapping at {{ bpm }} bpm.</div>
+    <div id="instructions">Tap the button or tap anywhere on your keyboard to start recording.<br />
+    (Note: Counter will reset after 3 seconds of no tapping.)</div>
+    <button class="btn btn-default btn-lg" 
+    data-ng-click="set_bpm()" 
+    data-ng-Keydown="blurMethod(0)">Tap!</button>
+    <button class="btn btn-danger btn-lg" 
+    data-ng-click="reset_bpm()" 
+    data-ng-Keydown="blurMethod(1)">Reset</button>
+    <div id="status">You are currently tapping at <b>{{ bpm }} bpm</b>.</div>
     <div id="firstClick"></div>
   </div>
 </body>
