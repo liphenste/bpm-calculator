@@ -16,3 +16,10 @@ npm start
 ```
 
 Then open your favourite browser and type `localhost:3000`.
+
+## To Do
+ - Rewrite BPM algorithm
+ - Add Bootstrap styling
+ - Set up MongoDB to store high scores, custom song BPMs
+ - Find API that gets BPMs of known songs
+ - Add Angular views that displays the songs
