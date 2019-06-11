@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/liphenste/bpm-calculator/issues"
   },
-  "homepage": "https://github.com/liphenste/bpm-calculator#readme"
+  "homepage": "https://github.com/liphenste/bpm-calculator#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
