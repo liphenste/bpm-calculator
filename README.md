@@ -2,12 +2,17 @@
 Calculates bpm based on rate of user input. Made with node.js, AngularJS, Bootstrap
 
 ## Setup
-This app actually doesn't have any dependencies atm, the `package.json` is only there in case I want to add some in the future.
+~~This app actually doesn't have any dependencies atm, the `package.json` is only there in case I want to add some in the future.~~
 
 Clone the repo:
 ```bash
 git clone https://github.com/liphenste/bpm-calculator
 cd bpm-calculator
+```
+
+**(New)** This project uses Express. Add it via running:
+```bash
+npm i
 ```
 
 Run the server:
