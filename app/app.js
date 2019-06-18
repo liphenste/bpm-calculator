@@ -18,8 +18,8 @@ bpmApp.controller('bpmCtrl', function ($scope) {
       document.getElementById("firstClick").innerHTML = "(first click!)";
     } else {
       document.getElementById("firstClick").innerHTML = "";
-    $scope.bpm = Math.round((len - 1)/ 
-      (($scope.times[len-1] - $scope.times[0]) * $scope.SpMS * $scope.MpS));
+      $scope.bpm = Math.round((len - 1)/ 
+        (($scope.times[len-1] - $scope.times[0]) * $scope.SpMS * $scope.MpS));
     }
     if (len > $scope.MAX_LEN) $scope.times.shift(); //removes first time from times (dynamic array)
 

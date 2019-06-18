@@ -10,21 +10,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
 
   <script src="app/app.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body data-ng-controller="bpmCtrl" data-ng-Keydown="set_bpm()">
-  <h1>BPM Calculator</h1>
-
-  <div>
+  <div class="container"
+  data-ng-click="set_bpm()" 
+  data-ng-Keydown="blur_method(0)">
+    <h1>BPM Calculator</h1>
     <div id="instructions">Tap the button or tap anywhere on your keyboard to start recording.<br />
-    (Note: Counter will reset after 3 seconds of no tapping.)</div>
-    <button class="btn btn-default btn-lg" 
-    data-ng-click="set_bpm()" 
-    data-ng-Keydown="blur_method(0)">Tap!</button>
-    <button class="btn btn-danger btn-lg" 
-    data-ng-click="reset_bpm()" 
-    data-ng-Keydown="blur_method(1)">Reset</button>
+    Counter will reset after 3 seconds of no tapping.</div>
     <div id="status">You are currently tapping at <b>{{ bpm }} bpm</b>.</div>
     <div id="firstClick"></div>
   </div>
+  <button class="btn btn-danger btn-lg" 
+  data-ng-click="reset_bpm()" 
+  data-ng-Keydown="blur_method(0)">Reset</button>
 </body>
 </html>
